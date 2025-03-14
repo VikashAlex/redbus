@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="icon" href="images/rdc-redbus-logo.webp">
+    <title>Bus Tickets Booking</title>
+</head>
+
+<body>
+    <div class="my-header-bar">
+        <div class="container">
+            <header>
+                <div class="left-div">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/rdc-redbus-logo.webp" alt="bus-logo" width="80px" height="48px">
+                        </a>
+                    </div>
+                    <div class="bus-train-logo">
+                        <a class="bus" href="index.html">
+                            <img src="images/rdc-redbus-logo.webp" alt="bus_logo" height="20px">
+                            <p>Bus Tickets</p>
+                        </a>
+
+                        <a class="train" href="railways.html">
+                            <img src="images/rail_logo.svg" alt="rail_logo" height="20px">
+                            <p>Train Tickets</p>
+                            <p class="off-60">₹60 off</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-div">
+                    <div class="link-1">
+                        <i class="fa-solid fa-headphones"></i>
+                        <a href="#">Help</a>
+                    </div>
+                    <div class="link-2">
+                        <i class="fa-solid fa-language"></i>
+                        <select name="lang">
+                            <option>English</option>
+                            <option>हिंदी (Hindi)</option>
+                            <option>தமிழ் (Tamil)</option>
+                        </select>
+                    </div>
+                    <div class="link-3">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <select name="acc">
+                            <option>Account</option>
+                            <option>Cancel Ticket</option>
+                            <option>Change Travel Date</option>
+                            <option>Show My Ticket</option>
+                            <option>Email/SMS</option>
+                            <option class="login-sinup">Login/ Sign Up</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-top-arrow">
+            <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </div>
+
+    <div class="main-section" id="top">
+        <div class="banner">
+            <img src="images/banner-img.webp" alt="banner-img" width="100%" height="100%">
+        </div>
+        <h1 class="top-main-heading">India's No. 1 Online Bus Ticket Booking Site</h1>
+        <div class="why-are-bus-container">
+            <div class="box-1">
+                <label for="from" class="box-item">
+                    <div class="icon-div">
+                        <i class="fa-solid fa-bus"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <label>
+                            From
+                        </label>
+                        <input type="text" id="from">
+                    </div>
+                </label>
+            </div>
+            <div class="box-1 box-2">
+                <label for="to" class="box-item">
+                    <div class="icon-div">
+                        <i class="fa-solid fa-bus"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <label>
+                            to
+                        </label>
+                        <input type="text" id="to">
+                    </div>
+                </label>
+            </div>
+            <div class="box-1 box-2">
+                <label for="date" class="box-item">
+                    <div class="icon-div">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <label>
+                            Date
+                        </label>
+                        <input type="text" id="date">
+                    </div>
+                </label>
+            </div>
+            <div class="box-4">
+                <button>SEARCH BUSES</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="treading-offer-box">
+
+
+        <div class="top-box">
+            <h1>TRENDING OFFERS</h1>
+            <a href="#">View All</a>
+        </div>
+
+        <div class="slider-container">
+            <!-- Radio Buttons for Navigation -->
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+
+            <div class="item-box">
+                <div class="item-box-1">
+                    <div class="img-box">
+                        <img src="images/haed-1.png" alt="head-img">
+                    </div>
+                    <div class="head-box">
+                        <button>BUS</button>
+                        <h2><a href="#">Save up to Rs 250 on bus tickets</a></h2>
+                        <p>Valid till 31 Mar</p>
+                        <div class="cupon-code"><span>First</span><i class="fa-regular fa-copy"></i></div>
+                    </div>
+                </div>
+                <div class="item-box-2">
+                    <div class="img-box">
+                        <img src="images/haed-2.png" alt="head-img">
+                    </div>
+                    <div class="head-box">
+                        <button>BUS</button>
+                        <h2><a href="#">Save up to Rs 300 on bus tickets</a></h2>
+                        <p>Valid till 31 Mar</p>
+                        <div class="cupon-code"><span>BUS300</span><i class="fa-regular fa-copy"></i></div>
+                    </div>
+                </div>
+                <div class="item-box-3">
+                    <div class="img-box">
+                        <img src="images/haed-3.png" alt="head-img">
+                    </div>
+                    <div class="head-box">
+                        <button>BUS</button>
+                        <h2><a href="#">Save up to Rs 300 on AP, TS routes</a></h2>
+                        <p>Valid till 31 Mar</p>
+                        <div class="cupon-code"><span>SUPERHIT</span><i class="fa-regular fa-copy"></i></div>
+                    </div>
+                </div>
+                <div class="item-box-4">
+                    <div class="img-box">
+                        <img src="images/haed-4.png" alt="head-img">
+                    </div>
+                    <div class="head-box">
+                        <button>BUS</button>
+                        <h2><a href="#">Save up to Rs 300 on Chartered Bus</a></h2>
+                        <p>Valid till 31 Mar</p>
+                        <div class="cupon-code"><span>CHARTERED15</span><i class="fa-regular fa-copy"></i></div>
+                    </div>
+                </div>
+                <div class="item-box-5">
+                    <div class="img-box">
+                        <img src="images/haed-5.png" alt="head-img">
+                    </div>
+                    <div class="head-box">
+                        <button>BUS</button>
+                        <h2><a href="#">Save 25% up to Rs 100 on SBSTC bus tickets.</a></h2>
+                        <p>Valid till 31 Mar</p>
+                        <div class="cupon-code"><span>SBNEW</span><i class="fa-regular fa-copy"></i></div>
+                    </div>
+                </div>
+
+                <div class="item-box-6">
+                    <div class="img-box">
+                        <img src="images/haed-6.png" alt="head-img">
+                    </div>
+                    <div class="head-box">
+                        <button>BUS</button>
+                        <h2><a href="#">Save Upto Rs 250 on UPSRTC bus tickets.</a></h2>
+                        <p>Valid till 31 Mar</p>
+                        <div class="cupon-code"><span>UPSRTC</span><i class="fa-regular fa-copy"></i></div>
+                    </div>
+                </div>
+
+                <div class="item-box-7">
+                    <div class="img-box">
+                        <img src="images/haed-7.png" alt="head-img">
+                    </div>
+                    <div class="head-box">
+                        <button>BUS</button>
+                        <h2><a href="#">Save up to Rs. 50 on IntrCity SmartBus</a></h2>
+                        <p>Valid till 31 Mar</p>
+                        <div class="cupon-code"><span>INTRCITY</span><i class="fa-regular fa-copy"></i></div>
+                    </div>
+                </div>
+
+                <div class="item-box-8">
+                    <div class="img-box">
+                        <img src="images/haed-8.png" alt="head-img">
+                    </div>
+                    <div class="head-box">
+                        <button>BUS</button>
+                        <h2><a href="#">Save up to Rs 50 on bus tickets</a></h2>
+                        <p>Valid till 31 Mar</p>
+                        <div class="cupon-code"><span>YOLORED</span><i class="fa-regular fa-copy"></i></div>
+                    </div>
+                </div>
+
+                <div class="item-box-9">
+                    <div class="img-box">
+                        <img src="images/haed-8.png" alt="head-img">
+                    </div>
+                    <div class="head-box">
+                        <button>BUS</button>
+                        <h2><a href="#">Save 10% Discount on bus tickets</a></h2>
+                        <p>Valid till 31 Mar</p>
+                        <div class="cupon-code"><span>SRS10</span><i class="fa-regular fa-copy"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="slider-buttons">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="Government-Buses-box">
+        <div class="top-box">
+            <h1>Government Buses</h1>
+            <a href="#">View All</a>
+        </div>
+
+        <div class="slider-container">
+            <!-- Radio Buttons for Navigation -->
+            <input type="radio" name="slider" id="bus-slide1" checked>
+            <input type="radio" name="slider" id="bus-slide2">
+            <input type="radio" name="slider" id="bus-slide3">
+
+            <div class="item-box">
+                <div class="item-box-1">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <img src="images/g-1.png" alt="img" width="54" height="54">
+                        </div>
+                        <div class="col-2">
+                            <h1>RSRTC <span><i class="fa-solid fa-star"></i> 3.71</span></h1>
+                            <p>राजस्थान स्टेट रोड ट्रांसपोर्ट कॉर्पोरशन</p>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <p>6000 services including Deluxe, Ordinary and more</p>
+                        <h2><img src="images/rdc-redbus-logo.webp" alt="para-logo" width="25" height="16">
+                            <span>Official booking partner of RSRTC</span>
+                        </h2>
+                    </div>
+                    <p>Use code FIRST to save upto ₹250 (only for first time users)</p>
+                </div>
+
+                <div class="item-box-1">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <img src="images/g-2.png" alt="img" width="54" height="54">
+                        </div>
+                        <div class="col-2">
+                            <h1>UPSRTC<span><i class="fa-solid fa-star"></i> 3.94</span></h1>
+                            <p>उत्तर प्रदेश राज्य सड़क परिवहन निगम</p>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <p>1738 services including Janrath,Shatabdi and more</p>
+                        <h2><img src="images/rdc-redbus-logo.webp" alt="para-logo" width="25" height="16">
+                            <span>Official booking partner of UPSRTC</span>
+                        </h2>
+                    </div>
+                    <p>Book your Kumbh Mela special bus now!</p>
+                </div>
+
+                <div class="item-box-1">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <img src="images/g-3.png" alt="img" width="54" height="54">
+                        </div>
+                        <div class="col-2">
+                            <h1>HRTC<span><i class="fa-solid fa-star"></i> 3.94</span></h1>
+                            <p>हिमाचल रोड ट्रान्सपोर्ट कॉर्पोरेशन</p>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <p>480 services including Himgaurav, Himmani and more</p>
+                        <h2><img src="images/rdc-redbus-logo.webp" alt="para-logo" width="25" height="16">
+                            <span>Official booking partner of HRTC</span>
+                        </h2>
+                    </div>
+                    <p>Use code FIRST to save upto ₹250 (only for first time users)</p>
+                </div>
+
+                <div class="item-box-1">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <img src="images/g-4.png" alt="img" width="54" height="54">
+                        </div>
+                        <div class="col-2">
+                            <h1>CTU RTC<span><i class="fa-solid fa-star"></i> 3.85</span></h1>
+                            <p>चंडीगढ़ परिवहन उपक्रम</p>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <p>143 services including AC & Non AC Bus and more</p>
+                        <h2><img src="images/rdc-redbus-logo.webp" alt="para-logo" width="25" height="16">
+                            <span>Official booking partner of CTU RTC</span>
+                        </h2>
+                    </div>
+                    <p>Use code FIRST to save upto ₹250 (only for first time users)</p>
+                </div>
+
+                <div class="item-box-1">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <img src="images/g-5.png" alt="img" width="54" height="54">
+                        </div>
+                        <div class="col-2">
+                            <h1>ASTC<span><i class="fa-solid fa-star"></i> 4.02</span></h1>
+                            <p>অসম ৰাজ্যিক পৰিবহন নিগম்</p>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <p>200 services including Volvo Bus, AC & Non AC Bus and more</p>
+                        <h2><img src="images/rdc-redbus-logo.webp" alt="para-logo" width="25" height="16">
+                            <span>Official booking partner of ASTC</span>
+                        </h2>
+                    </div>
+                    <p>Use code FIRST to save upto ₹250 (only for first time users)</p>
+                </div>
+
+                <div class="item-box-1">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <img src="images/g-6.png" alt="img" width="54" height="54">
+                        </div>
+                        <div class="col-2">
+                            <h1>KTCL<span><i class="fa-solid fa-star"></i> 3.83</span></h1>
+                            <p>कदंब येरादारी म्हामंडळ</p>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <p>60 services including Volvo Bus, AC & Non AC Bus and more</p>
+                        <h2><img src="images/rdc-redbus-logo.webp" alt="para-logo" width="25" height="16">
+                            <span>Official booking partner of KTCL</span>
+                        </h2>
+                    </div>
+                    <p>Use code FIRST to save upto ₹250 (only for first time users)</p>
+                </div>
+
+                <div class="item-box-1">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <img src="images/g-3.png" alt="img" width="54" height="54">
+                        </div>
+                        <div class="col-2">
+                            <h1>HRTC<span><i class="fa-solid fa-star"></i> 3.94</span></h1>
+                            <p>हिमाचल रोड ट्रान्सपोर्ट कॉर्पोरेशन</p>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <p>480 services including Himgaurav, Himmani and more</p>
+                        <h2><img src="images/rdc-redbus-logo.webp" alt="para-logo" width="25" height="16">
+                            <span>Official booking partner of HRTC</span>
+                        </h2>
+                    </div>
+                    <p>Use code FIRST to save upto ₹250 (only for first time users)</p>
+                </div>
+
+                <div class="item-box-1">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <img src="images/g-5.png" alt="img" width="54" height="54">
+                        </div>
+                        <div class="col-2">
+                            <h1>ASTC<span><i class="fa-solid fa-star"></i> 4.02</span></h1>
+                            <p>অসম ৰাজ্যিক পৰিবহন নিগম்</p>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <p>200 services including Volvo Bus, AC & Non AC Bus and more</p>
+                        <h2><img src="images/rdc-redbus-logo.webp" alt="para-logo" width="25" height="16">
+                            <span>Official booking partner of ASTC</span>
+                        </h2>
+                    </div>
+                    <p>Use code FIRST to save upto ₹250 (only for first time users)</p>
+                </div>
+
+            </div>
+
+            <div class="slider-buttons">
+                <label for="bus-slide1"></label>
+                <label for="bus-slide2"></label>
+                <label for="bus-slide3"></label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="train-ticket-box">
+        <div class="col1">
+            <div class="heading-box">
+                <h2> NOW, <b>GET MORE THAN <br> JUST BUS</b> TICKETS WITH <br> REDBUS!</h2>
+            </div>
+            <div class="button-box">
+                <img src="images/rail_vertical.svg" alt="rail_vertical">
+                <a href="#">Train Ticket</a>
+            </div>
+            <div class="pra-box">
+                <p>Book IRCTC Train Tickets on redRail simple & superfast booking process with no service fee + no
+                    payment gateway charge.</p>
+            </div>
+            <div class="list-para">
+                <div>
+                    <img src="images/rail-1.png" alt="" width="32" height="32">
+                    <h3>Authorised IRCTC Partner</h3>
+                </div>
+                <div>
+                    <img src="images/rail-2.svg" alt="" width="32" height="32">
+                    <h3>Instant refunds on UPI payments</h3>
+                </div>
+                <div>
+                    <img src="images/rail-3.svg" alt="" width="32" height="32">
+                    <h3>Hassle- free customer support</h3>
+                </div>
+            </div>
+            <div class="button2-box">
+                <button>Book Train Ticket <i class="fa-solid fa-arrow-right"></i></button>
+
+            </div>
+        </div>
+        <div class="col2">
+            <img src="images/trans-img.svg" alt="" width="100%">
+            <img src="images/railPop.webp" alt="">
+        </div>
+    </div>
+
+    <div class="app-download-box">
+        <div class="heading-box">
+            <h2>ENJOY THE APP!</h2>
+        </div>
+        <div class="left-right-box">
+            <div class="left-box">
+
+                <div class="blue-tick">
+                    <div><img src="images/tick.svg" alt="">
+                        <p>Quick access</p>
+                    </div>
+                    <div><img src="images/tick.svg" alt="">
+                        <p>Superior live tracking</p>
+                    </div>
+                </div>
+
+                <div class="three-box">
+                    <div class="first">
+                        <h1> <label>4.5</label> <i class="fa-solid fa-star"></i> </h1>
+                        <p>50M+ downloads</p>
+                        <a href="#">Play Store</a>
+                    </div>
+                    <div class="second"></div>
+                    <div class="third">
+                        <h1> <label>4.6</label> <i class="fa-solid fa-star"></i> </h1>
+                        <p>50M+ downloads</p>
+                        <a href="#">App Store</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-box">
+                <div class="col1-box">
+                    Scan to download
+                    <img src="images/qrImage.svg" alt="" height="106">
+                </div>
+                <div class="col1-box">Download the App on
+                    <img src="images/playStore.svg" alt="" width="145" height="42">
+                    <img src="images/appStore.svg" alt="" width="147" height="46">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="primo-box">
+        <div class="item-box">
+            <img src="images/primoHomeBannerComp.webp" alt="">
+            <div class="content-box">
+                <div class="row">
+                    <div class="col-1"><i class="fa-solid fa-clock"></i></div>
+                    <div class="col-2">
+                        <h2>On Time</h2>
+                        <p>Punctual arrivals on <br> 95% trips</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1"><i class="fa-solid fa-hands-praying"></i></div>
+                    <div class="col-2">
+                        <h2>Friendly Staff</h2>
+                        <p>Always ready to help</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1"><i class="fa-regular fa-star"></i></div>
+                    <div class="col-2">
+                        <h2>Top Rated</h2>
+                        <p>Buses with 4+ star<br> rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="global-box">
+        <h2>Global Presence</h2>
+        <div class="flag-box">
+
+            <div class="item-box">
+                <img src="images/Colombia.svg" alt="flag" width="100" height="100">
+                <p><a href="#">Colombia</a></p>
+            </div>
+            <div class="item-box">
+                <img src="images/India.svg" alt="flag" width="100" height="100">
+                <p><a href="#">India</a></p>
+            </div>
+            <div class="item-box">
+                <img src="images/Indonesia.svg" alt="flag" width="100" height="100">
+                <p><a href="#">Indonesia</a></p>
+            </div>
+            <div class="item-box">
+                <img src="images/Malaysia.svg" alt="flag" width="100" height="100">
+                <p><a href="#">Malaysia</a></p>
+            </div>
+            <div class="item-box">
+                <img src="images/Peru.svg" alt="flag" width="100" height="100">
+                <p><a href="#">Peru</a></p>
+            </div>
+            <div class="item-box">
+                <img src="images/Singapore.svg" alt="flag" width="100" height="100">
+                <p><a href="#">Singapore</a></p>
+            </div>
+            <div class="item-box">
+                <img src="images/Vietnam.svg" alt="flag" width="100" height="100">
+                <p><a href="#">Vietnam</a></p>
+            </div>
+            <div class="item-box">
+                <img src="images/Cambodia.svg" alt="flag" width="100" height="100">
+                <p><a href="#">Cambodia</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="paragraph-container">
+        <div class="para-container-1">
+            <h2>BOOK BUS TICKETS ONLINE</h2>
+            <p>redBus is India's largest brand for online bus ticket booking and offers an easy-to-use online bus and <a
+                    href="#" target="_self">train ticket </a> booking; with over 36 million satisfied customers, 3500+
+                bus operators to choose from, and plenty of offers on bus ticket booking, redBus makes road journeys
+                super convenient for travellers. A leading platform for booking bus tickets, redBus has been the leader
+                in online bus booking over the past 17 years across thousands of cities and lakhs of routes in India.
+            </p>
+
+            <p>Booking a bus ticket online on the redBus app or website is very simple. You can download the redBus app
+                or visit redbus.in and enter your source, destination &amp; travel date to check the top-rated bus
+                services available. You can then compare the cheapest ticket price, user ratings &amp; amenities, select
+                your preferred seat, boarding &amp; dropping points and pay using multiple payment options like UPI,
+                debit or credit card, net banking and more. With redBus, get assured safe &amp; secure payment methods
+                and guaranteed travel <span>...</span><span id="more" class="viewTextMore"
+                    style="color: #00E; font-size: 1rem; font-style: normal; font-weight: 500; line-height: 2rem; cursor: pointer;">
+                    Read more</span></p>
+
+            <h2>Bus Booking redDeals on redBus</h2>
+            <p>Don't miss out on these incredible offers, book your bus tickets now and travel with convenience and
+                affordability. Hurry, grab the best bus booking deals before they're gone!</p>
+            <div class="Exclusive-redDeals-box">
+                <div class="left-box">
+                    <div class="bus-logo">
+                        <img src="images/rdc-redbus-logo.webp" alt="" width="56">
+                    </div>
+                    <div class="content-box">
+                        <h2>Unlock Unbeatable Exclusive redDeals! <span> 20% OFF</span></h2>
+                        <div class="link">
+                            <a><span> 3966</span> Deals</a>
+                            <a class="child-2"><span> 1770</span> Bus Operators </a>
+                            <a><span> 332927</span> Routes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <button>Book now</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="para-container-2">
+            <h2>FAQs related to Bus Tickets Booking</h2>
+            <div class="top-section-box">
+                <div class="four-section"><a href="#" checked>General</a></div>
+                <div class="four-section"><a href="#">Ticket-related</a></div>
+                <div class="four-section"><a href="#">Payment</a></div>
+                <div class="four-section"><a href="#">Cancellation & Refund</a></div>
+            </div>
+            <div class="FQ-Container">
+                <label for="plus-arrow1">
+                    <input type="checkbox" id="plus-arrow1">
+                    <div class="Fq-box">
+                    <div class="Fq-box-child">
+                        <p> Can I track the location of my booked bus online? </p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <p class="fq-paragraph">Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”. This feature allows passengers and their families to track the live bus location. You may follow your bus on a map and use the information to plan your trip to the boarding point and to get off at the correct stop. Family and friends may also check the bus position to schedule pick-ups and ensure safety.</p>
+                </div>
+                </label>
+
+                <label for="plus-arrow2">
+                    <input type="checkbox" id="plus-arrow2">
+                    <div class="Fq-box">
+                    <div class="Fq-box-child">
+                        <p> What are the advantages of purchasing a bus ticket with redBus?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <p class="fq-paragraph">There are many advantages to purchasing online bus tickets with redBus. redBus is India’s most trusted bus ticket company, where you can book any type of private or government-owned bus. redBus allows you to find the different types of buses, choose the preferred bus seats, and find your nearest boarding and dropping points. You can also filter the buses based on timings, like morning, evening, etc. </p>
+                </div>
+                </label>
+                
+                <label for="plus-arrow3">
+                    <input type="checkbox" id="plus-arrow3">
+                    <div class="Fq-box">
+                    <div class="Fq-box-child">
+                        <p>Why book bus tickets online on redBus?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <p class="fq-paragraph">Booking bus tickets online on redBus is increasingly becoming the preferred choice for travellers due to its numerous advantages over traditional methods. With redBus, customers can book their bus tickets effortlessly from the comfort of their homes, avoiding the inconvenience of standing in long lines at bus stations or travel agencies. Online bus booking offers the luxury of comparing different bus schedules and operators and presents various discount offers and exclusive deals, resulting in significant savings. Payment security is another notable feature of online booking, which ensures that your financial information is well-protected against fraud. Additionally, customers can pick their seats, providing a customized travel experience. Online bus booking platforms give real-time updates about any changes in the bus timetable, including delays or cancellations, enabling better planning. The convenience doesn't stop here; travellers can even compare onboard amenities like charging points or snacks, further enhancing the travel experience.</p>
+                </div>
+                </label>
+
+                <label for="plus-arrow4">
+                    <input type="checkbox" id="plus-arrow4">
+                    <div class="Fq-box">
+                    <div class="Fq-box-child">
+                        <p>Do I need to create an account on the redBus site to book my bus ticket?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <p class="fq-paragraph">No, you don’t have to create an account on the redBus site to book your bus ticket. But it is advisable to make one to accelerate the process next time you want to book bus tickets. Also, redBus has many discounts and offers that you can easily access if you have an account with us.</p>
+                </div>
+                </label>
+                
+                <label for="plus-arrow5">
+                    <input type="checkbox" id="plus-arrow5">
+                    <div class="Fq-box">
+                    <div class="Fq-box-child">
+                        <p>Does bus booking online cost me more?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <p class="fq-paragraph">Not at all! The bus ticket price is the same as you would get from the bus operator/ counter of any bus ticket agency. redbus reduces the travel budget by comparing the bus ticket prices among various operators, making it a more cost-effective choice. Therefore, online bus booking is increasingly recognized as a more convenient, efficient, and economical mode of securing travel arrangements.</p>
+                </div>
+                </label>
+                
+                <label for="plus-arrow6">
+                    <input type="checkbox" id="plus-arrow6">
+                    <div class="Fq-box">
+                    <div class="Fq-box-child">
+                        <p>How can I get the discounts on the bus booking?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <p class="fq-paragraph">To get a discount on bus booking, please visit https://www.redbus.in/info/OfferTerms and check the available offers. Copy the coupon code and paste it during checkout to avail of the discount.</p>
+                </div>
+                </label> 
+                
+                <label for="plus-arrow7">
+                    <input type="checkbox" id="plus-arrow7">
+                    <div class="Fq-box">
+                    <div class="Fq-box-child">
+                        <p>What's New in Bus Booking on redBus?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <p class="fq-paragraph">Primo Bus Ticket: redBus has launched Primo bus services, where passengers can enjoy travelling in high-rated buses with best-in-class services. While looking for bus tickets on the desired route, customers can check the Primo tag to choose this excellent service. From hygiene standards to on-time service and comfort, passengers can benefit from the online bus booking experience from Primo buses.</p>
+                </div>
+                </label> 
+                
+                <label for="plus-arrow8">
+                    <input type="checkbox" id="plus-arrow8">
+                    <div class="Fq-box">
+                    <div class="Fq-box-child">
+                        <p>Can I book a Government bus ticket on redBus?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <p class="fq-paragraph">Yes, you can book government bus tickets on redBus. redBus has extended its bus booking services to many RTCs in India. Some of these RTCs are <a href="https://www.redbus.in/online-booking/apsrtc" target="_self">Andhra Pradesh State Road Transport Corporation </a>(APSRTC),<a href="https://www.redbus.in/online-booking/astc" target="_self"> Assam State Transport Corporation</a> (ASTC), <a href="https://www.redbus.in/online-booking/bihar-state-tourism-development-corporation" target="_self">Bihar State Tourism Development Corporation </a>(BSTDC), <a href="https://www.redbus.in/online-booking/hrtc" target="_self">Himachal Road Transport Corporation</a> (HRTC), J<a href="https://www.redbus.in/online-booking/jksrtc" target="_self">ammu and Kashmir State Road Transport Corporation</a> (JKSRTC), <a href="https://www.redbus.in/online-booking/ksrtc-kerala" target="_self">Kerala RTC</a>, <a href="https://www.redbus.in/online-booking/ktcl" target="_self">Kadamba Transport Corporation</a> (KTCL), <a href="https://www.redbus.in/online-booking/pepsu" target="_self">Patiala and the East Punjab States Union</a> (PEPSU),<a href="https://www.redbus.in/online-booking/puducherry-road-transport-corporation-prtc" target="_self"> Puducherry Road Transport Corporation</a> (PRTC), <a href="https://www.redbus.in/online-booking/rsrtc" target="_self">Rajasthan State Road Transport Corporation</a> (RSRTC), <a href="https://www.redbus.in/online-booking/south-bengal-state-transport-corporation-sbstc" target="_self">South Bengal State Transport Corporation</a> (SBSTC), <a href="https://www.redbus.in/online-booking/utc" target="_self">Uttarakhand Transport Corporation</a> (UTC), <a href="https://www.redbus.in/online-booking/west-bengal-transport-corporation" target="_self">West Bengal Transport Corporation</a> WBTC (CTC), <a href="https://www.redbus.in/online-booking/north-bengal-state-transport-corporation" target="_self">North Bengal State Transport Corporation </a>(NBSTC) <a href="https://www.redbus.in/online-booking/chandigarh-transport-undertaking-ctu" target="_self">Chandigarh Transport Undertaking (CTU)</a>&nbsp;</p>
+                </div>
+                </label>
+                
+               
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <ul class="fq-li">
+                <li>
+                    <div class="input01">
+                        <input type="checkbox" id="arrow1">
+                        <div class="Arrow-fq1">
+                            <div class="heading">
+                                <h3>Popular Bus Routes</h3><label for="arrow1" class="label1"><i
+                                        class="fa-solid fa-angle-down"></i></label>
+                            </div>
+
+                            <div class="ul-list">
+                                <a href="#">Delhi To Manali Bus</a> |
+                                <a href="#">Delhi To Rishikesh Bus</a> |
+                                <a href="#">Delhi To Shimla Bus</a> |
+                                <a href="#">Delhi To Nainital Bus</a> |
+                                <a href="#">Delhi To Katra Bus</a> |
+                                <a href="#">Bangalore To Goa Bus</a> |
+                                <a href="#">Bangalore To Hyderabad Bus</a> |
+                                <a href="#">Bangalore To Tirupathi Bus</a> |
+                                <a href="#">Bangalore To Chennai Bus</a> |
+                                <a href="#">Bangalore To Pondicherry Bus</a> |
+                                <a href="#">Hyderabad To Bangalore Bus</a> |
+                                <a href="#">Hyderabad To Goa Bus</a> |
+                                <a href="#">Hyderabad To Srisailam Bus</a> |
+                                <a href="#">Hyderabad To Vijayawada Bus</a> |
+                                <a href="#">Hyderabad To Tirupathi Bus</a> |
+                                <a href="#">Pune To Goa Bus</a> |
+                                <a href="#">Pune To Mumbai Bus</a> |
+                                <a href="#">Pune To Nagpur Bus</a> |
+                                <a href="#">Pune To Kolhapur Bus</a> |
+                                <a href="#">Pune To Nashik Bus</a> |
+                                <a href="#">Mumbai To Goa Bus</a> |
+                                <a href="#">Mumbai To Pune Bus</a> |
+                                <a href="#">Mumbai To Shirdi Bus</a> |
+                                <a href="#">Mumbai To Mahabaleshwar Bus</a> |
+                                <a href="#">Mumbai To Kolhapur Bus</a> |
+                                <a href="#">Kolkata To Digha Bus</a> |
+                                <a href="#">Kolkata To Siliguri Bus</a> |
+                                <a href="#">Kolkata To Puri Bus</a> |
+                                <a href="#">Kolkata To Bakkhali Bus</a> |
+                                <a href="#">Kolkata To Mandarmani Bus</a> |
+                                <a href="#">Chennai To Bangalore Bus</a> |
+                                <a href="#">Chennai To Pondicherry Bus</a> |
+                                <a href="#">Chennai To Coimbatore Bus</a> |
+                                <a href="#">Chennai To Madurai Bus</a> |
+                                <a href="#">Chennai To Tirupathi Bus</a> |
+                                <a href="#">Chandigarh To Manali Bus</a> |
+                                <a href="#">Chandigarh To Shimla Bus</a> |
+                                <a href="#">Chandigarh To Delhi Bus</a> |
+                                <a href="#">Chandigarh To Dehradun Bus</a> |
+                                <a href="#">Chandigarh To Amritsar Bus</a> |
+                                <a href="#">Coimbatore To Chennai Bus</a> |
+                                <a href="#">Coimbatore To Bangalore Bus</a> |
+                                <a href="#">Coimbatore To Ooty Bus</a> |
+                                <a href="#">Coimbatore To Tiruchendur Bus</a> |
+                                <a href="#">Coimbatore To Madurai Bus</a> |
+                                <a href="#">Agra To Bareilly Bus</a> |
+                                <a href="#">Hisar To Chandigarh Bus</a> |
+                                <a href="#">Hisar To Delhi Bus</a> |
+                                <a href="#">Lucknow to Ballia Bus</a> |
+                                <a href="#">Lucknow to Moradabad Bus</a> |
+                                <a href="#">Rajkot To Dwarka Bus</a> |
+                                <a href="#">Siliguri to Gangtok Bus</a> |
+                                <a href="#">Ahmedabad to Goa Bus</a> |
+                                <a href="#">Ahmedabad to Kanpur Bus</a> |
+                                <a href="#">Akola to Pune Bus</a> |
+                                <a href="#">Delhi to Dehradun Bus</a> |
+                                <a href="#">Delhi to Haridwar Bus</a> |
+                                <a href="#">Dehradun to Delhi Bus</a> |
+                                <a href="#">Delhi to Agra Bus</a> |
+                                <a href="#">Delhi to Varanasi Bus</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input01">
+                        <input type="checkbox" id="arrow2">
+                        <div class="Arrow-fq1">
+                            <div class="heading">
+                                <h3>Popular Cities</h3><label for="arrow2" class="label2"><i
+                                        class="fa-solid fa-angle-down"></i></label>
+                            </div>
+
+                            <div class="ul-list">
+                                <a href="#">Hyderabad Bus Booking</a> |
+                                <a href="#">Bangalore Bus Booking</a> |
+                                <a href="#">Chennai Bus Booking</a> |
+                                <a href="#">Pune Bus Booking</a> |
+                                <a href="#">Delhi Bus Booking</a> |
+                                <a href="#">Mumbai Bus Booking</a> |
+                                <a href="#">Kolkata Bus Booking</a> |
+                                <a href="#">Ernakulam Bus Booking</a> |
+                                <a href="#">Ahmedabad Bus Booking</a> |
+                                <a href="#">Vijayawada Bus Booking</a> |
+                                <a href="#">Jaipur Bus Booking</a> |
+                                <a href="#">Indore Bus Booking</a> |
+                                <a href="#">Lucknow Bus Booking</a> |
+                                <a href="#">Bhopal Bus Booking</a> |
+                                <a href="#">Goa Bus Booking</a> |
+                                <a href="#">Ayodhya Bus Booking</a> |
+                                <a href="#">Prayagraj Bus Booking</a> |
+                                <a href="#">Varanasi Bus Booking</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="input01">
+                        <input type="checkbox" id="arrow3">
+                        <div class="Arrow-fq1">
+                            <div class="heading">
+                                <h3>Popular Bus Operators</h3><label for="arrow3" class="label3"><i
+                                        class="fa-solid fa-angle-down"></i></label>
+                            </div>
+
+                            <div class="ul-list">
+                                <a href="#">No 1 Air Travels</a> |
+                                <a href="#">YBM Travels</a> |
+                                <a href="#">Sri SMS Travels</a> |
+                                <a href="#">Svkdt Travels</a> |
+                                <a href="#">RKT Tours and Travels</a> |
+                                <a href="#">Royal Cars</a> |
+                                <a href="#">Rahul Travels</a> |
+                                <a href="#">JBT Travels</a> |
+                                <a href="#">Raj Express</a> |
+                                <a href="#">Vaishali Express</a> |
+                                <a href="#">Rahul Travels Indore</a> |
+                                <a href="#">Delhi Tours And Travels</a> |
+                                <a href="#">Ashok Travels</a> |
+                                <a href="#">Greenline Travels</a> |
+                                <a href="#">Pawan Travels</a> |
+                                <a href="#">Ravi Travels</a> |
+                                <a href="#">VRL Travels</a> |
+                                <a href="#">Dolphin Travels</a> |
+                                <a href="#">Ganesh Travels</a> |
+                                <a href="#">Kaveri Travels</a> |
+                                <a href="#">National Travels</a> |
+                                <a href="#">Bharathi Travels</a> |
+                                <a href="#">City Land Travels</a> |
+                                <a href="#">KKaveri Travels</a> |
+                                <a href="#">KK Travels</a> |
+                                <a href="#">Mahadev Travels</a> |
+                                <a href="#">Maharaja Travels</a> |
+                                <a href="#">M R Travels</a> |
+                                <a href="#">New Payal Travels</a> |
+                                <a href="#">Paras Travels</a> |
+                                <a href="#">Shree Parshwanath Travels</a> |
+                                <a href="#">Payal Travels</a> |
+                                <a href="#">R K Travels</a> |
+                                <a href="#">Shivam Travels</a> |
+                                <a href="#">Shree Mahaveer Travels</a> |
+                                <a href="#">SRS Travels</a> |
+                                <a href="#">Tulsi Travels</a> |
+                                <a href="#">Vaibhav Travels</a> |
+                                <a href="#">Vikas Travels</a> |
+                                <a href="#">Amarnath Travels</a> |
+                                <a href="#">Anand Travels</a> |
+                                <a href="#">Ashapura Travels</a> |
+                                <a href="#">Ashok Bus Service</a> |
+                                <a href="#">Ashoka Travels</a> |
+                                <a href="#">Chartered Bus</a> |
+                                <a href="#">Neugo</a> |
+                                <a href="#">Intrcity Smart Bus</a> |
+                                <a href="#">Uttar Pradesh State Road Transport Corporation (UPSRTC)</a> |
+                                <a href="#">HRTC Bus</a> |
+                                <a href="#">South Bengal State Road Transport Corporation (SBSTC)</a> |
+                                <a href="#">NBSTC</a> |
+                                <a href="#">A1 Travels</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="main-footer-box">
+                <ul>
+                    <li>
+                        <div class="first-box">
+                            <div class="logo-div"><img src="images/rdc-redbus-logo.webp" alt="logo" height="65"></div>
+                            <p>redBus is the world's largest online bus ticket booking service trusted by over 25
+                                million happy customers globally. redBus offers bus ticket booking through its website,
+                                iOS and Android mobile apps for all major routes.</p>
+                        </div>
+
+                        <div class="Links-box">
+                            <h3>About redBus</h3>
+                            <ul>
+                                <li><a href="#"> About us</a></li>
+                                <li><a href="#">Investor Relations</a></li>
+                                <li><a href="#"> Contact us</a></li>
+                                <li><a href="#"> redBus on mobile</a></li>
+                                <li><a href="#">Sitemap </a></li>
+                                <li><a href="#">Offers </a></li>
+                                <li><a href="#">Careers </a></li>
+                                <li><a href="#">Values</a></li>
+                            </ul>
+                        </div>
+                        <div class="Links-box">
+                            <h3>Info</h3>
+                            <ul>
+                                <li><a href="#">T&C</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Bus operator registration</a></li>
+                                <li><a href="#">Agent registration</a></li>
+                                <li><a href="#">Insurance partner</a></li>
+                                <li><a href="#">User agreement</a></li>
+                                <li><a href="#">Primo Bus</a></li>
+                                <li><a href="#">Bus Timetable</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="Links-box">
+                            <h3>Global Sites</h3>
+                            <ul>
+                                <li><a href="#">India</a></li>
+                                <li><a href="#">Singapore</a></li>
+                                <li><a href="#">Malaysia</a></li>
+                                <li><a href="#">Indonesia</a></li>
+                                <li><a href="#">Peru</a></li>
+                                <li><a href="#">Colombia</a></li>
+                                <li><a href="#">Cambodia</a></li>
+                                <li><a href="#">Vietnam</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="Links-box">
+                            <h3>Our Partners</h3>
+                            <ul>
+                                <li><a href="#">Goibibo Bus</a></li>
+                                <li><a href="#">Goibibo Hotels</a></li>
+                                <li><a href="#">Makemytrip Hotels</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="horizontal-line-box"></div>
+                <div class="copy-right-box">
+                    <p>Ⓒ 2025 Redbus India Pvt Ltd. All rights reserved</p>
+                    <div class="fv-icon">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
